@@ -82,14 +82,19 @@ main {
 	".	about		."
 	".	projects	."
 	".	footer		.";
-	grid-template-columns: 2fr 3fr 2fr;
+	grid-template-columns: auto 50% auto;
 	grid-template-rows: auto 3fr auto;
 	row-gap: 30px; /* spacing between rows */
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* mobile: 1 column */
+  }
 }
 
 .box {
 	background-color:#FFFFFFBF;
-	border-radius: 15px;  /* rounds corners */
+	border-radius: 1rem;  /* rounds corners */
 	padding: 30px
 }
 
