@@ -1,0 +1,133 @@
+* {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 1.1rem;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.just-left {
+	justify-self: left;
+} .just-center {
+	justify-self: center;
+} .just-right {
+	justify-self: right;
+}
+
+.pad-t-10 {
+	padding-top: 10px;
+} .pad-b-10 {
+	padding-bottom: 10px;
+} .pad-l-10 {
+	padding-left: 10px;
+} .pad-r-10 {
+	padding-right: 10px;
+}
+
+.pad-t-20 {
+	padding-top: 20px;
+} .pad-b-20 {
+	padding-bottom: 20px;
+} .pad-l-20 {
+	padding-left: 20px;
+} .pad-r-20 {
+	padding-right: 20px;
+}
+
+.pad-t-30 {
+	padding-top: 30px;
+} .pad-b-30 {
+	padding-bottom: 30px;
+} .pad-l-30 {
+	padding-left: 30px;
+} .pad-r-30 {
+	padding-right: 30px;
+}
+
+.pad-t-40 {
+	padding-top: 40px;
+} .pad-b-40 {
+	padding-bottom: 40px;
+} .pad-l-40 {
+	padding-left: 40px;
+} .pad-r-40 {
+	padding-right: 40px;
+}
+
+.pad-t-60 {
+	padding-top: 60px;
+} .pad-b-60 {
+	padding-bottom: 60px;
+} .pad-l-60 {
+	padding-left: 60px;
+} .pad-r-60 {
+	padding-right: 60px;
+}
+
+body {
+	background-color: #421e24;
+	color: #4C4F57;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+
+main {
+	display: grid;
+	grid-template-areas:
+	".	name		."
+	".	about		."
+	".	projects	."
+	".	footer		.";
+	grid-template-columns: 2fr 3fr 2fr;
+	grid-template-rows: auto 3fr auto;
+	row-gap: 30px; /* spacing between rows */
+}
+
+.box {
+	background-color:#FFFFFFBF;
+	border-radius: 15px;  /* rounds corners */
+	padding: 30px
+}
+
+#about {
+	grid-area: about;
+	margin-top: 60px;
+
+	display: grid;
+	grid-template-areas:
+	"name"
+	"about-me"
+	"social-links";
+} #about name {
+	grid-area: name;
+} #about p {
+	grid-area: about-me;
+}
+
+.social-icon {
+	width: 2rem;
+	height: 2rem;
+}
+
+#projects {
+	grid-area: projects;
+	display: grid;
+	place-items: center;
+}
+
+iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+#footer {
+	grid-area: footer;
+	color: #FFFFFFBF;
+} #footer p {
+	font-weight: 400;
+	font-size: 0.9rem;
+}
